@@ -1,0 +1,16 @@
+{
+  "name": "node-vue-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "cd backend && yarn start",
+    "start-vue": "cd frontend && yarn serve",
+    "postinstall": "(cd backend && yarn install && cd ../) && (cd frontend && yarn install)",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bryce Fausto",
+  "license": "ISC",
+  "dependencies": {}
+}
