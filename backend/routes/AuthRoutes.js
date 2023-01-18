@@ -49,7 +49,8 @@ router.post("/register", async (req, res) => {
       }
     });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.log(error.message);
+    res.status(500).send("Some error occurred while registering the user.");
   }
 });
 
